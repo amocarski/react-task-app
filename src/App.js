@@ -1,12 +1,16 @@
 import React from 'react';
 import './App.css';
+import 'antd/dist/antd.css';
+import ArticlesList from './components/articles-list/ArticlesList';
+import SearchInput from './components/search/SearchInput';
 
-function App() {
+const App = () => {
   return (
-    <>
-      plain app
-    </>
+    <div className="custom-width">
+      <SearchInput />
+      <ArticlesList />
+    </div>
   );
-}
+};
 
 export default App;
